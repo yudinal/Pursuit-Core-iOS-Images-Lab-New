@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A652770523A1805C00E20BF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652770423A1805C00E20BF4 /* AppDelegate.swift */; };
+		A652770723A1805C00E20BF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652770623A1805C00E20BF4 /* SceneDelegate.swift */; };
+		A652770923A1805C00E20BF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652770823A1805C00E20BF4 /* ViewController.swift */; };
+		A652770C23A1805C00E20BF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A652770A23A1805C00E20BF4 /* Main.storyboard */; };
+		A652770E23A1806000E20BF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A652770D23A1806000E20BF4 /* Assets.xcassets */; };
+		A652771123A1806000E20BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A652770F23A1806000E20BF4 /* LaunchScreen.storyboard */; };
+		A652771C23A1806000E20BF4 /* Pursuit_Core_iOS_Images_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652771B23A1806000E20BF4 /* Pursuit_Core_iOS_Images_LabTests.swift */; };
+		A652772723A1835100E20BF4 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652772623A1835100E20BF4 /* NetworkHelper.swift */; };
+		A652772923A183AA00E20BF4 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652772823A183AA00E20BF4 /* AppError.swift */; };
+		A652772B23A191F300E20BF4 /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652772A23A191F300E20BF4 /* ImageClient.swift */; };
+		A652772D23A1927900E20BF4 /* ComicAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652772C23A1927900E20BF4 /* ComicAPIClient.swift */; };
+		A652772F23A192BA00E20BF4 /* ComicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652772E23A192BA00E20BF4 /* ComicData.swift */; };
+		A652773123A1AE2A00E20BF4 /* PokemonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652773023A1AE2A00E20BF4 /* PokemonData.swift */; };
+		A652773B23A2CCE100E20BF4 /* PokemonAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652773A23A2CCE100E20BF4 /* PokemonAPIClient.swift */; };
+		A652773D23A2D08A00E20BF4 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652773C23A2D08A00E20BF4 /* PokemonViewController.swift */; };
+		A652773F23A2D40D00E20BF4 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652773E23A2D40D00E20BF4 /* PokemonCell.swift */; };
+		A652774223A2D9BF00E20BF4 /* DetailPokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652774123A2D9BF00E20BF4 /* DetailPokemonController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A652771823A1806000E20BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A65276F923A1805C00E20BF4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A652770023A1805C00E20BF4;
+			remoteInfo = "Pursuit-Core-iOS-Images-Lab";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A652770123A1805C00E20BF4 /* Pursuit-Core-iOS-Images-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pursuit-Core-iOS-Images-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A652770423A1805C00E20BF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A652770623A1805C00E20BF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A652770823A1805C00E20BF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A652770B23A1805C00E20BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A652770D23A1806000E20BF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A652771023A1806000E20BF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A652771223A1806000E20BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A652771723A1806000E20BF4 /* Pursuit-Core-iOS-Images-LabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pursuit-Core-iOS-Images-LabTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A652771B23A1806000E20BF4 /* Pursuit_Core_iOS_Images_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pursuit_Core_iOS_Images_LabTests.swift; sourceTree = "<group>"; };
+		A652771D23A1806000E20BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A652772623A1835100E20BF4 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		A652772823A183AA00E20BF4 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		A652772A23A191F300E20BF4 /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
+		A652772C23A1927900E20BF4 /* ComicAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicAPIClient.swift; sourceTree = "<group>"; };
+		A652772E23A192BA00E20BF4 /* ComicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicData.swift; sourceTree = "<group>"; };
+		A652773023A1AE2A00E20BF4 /* PokemonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonData.swift; sourceTree = "<group>"; };
+		A652773A23A2CCE100E20BF4 /* PokemonAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPIClient.swift; sourceTree = "<group>"; };
+		A652773C23A2D08A00E20BF4 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
+		A652773E23A2D40D00E20BF4 /* PokemonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
+		A652774123A2D9BF00E20BF4 /* DetailPokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPokemonController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A65276FE23A1805C00E20BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A652771423A1806000E20BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A65276F823A1805C00E20BF4 = {
+			isa = PBXGroup;
+			children = (
+				A652770323A1805C00E20BF4 /* Pursuit-Core-iOS-Images-Lab */,
+				A652771A23A1806000E20BF4 /* Pursuit-Core-iOS-Images-LabTests */,
+				A652770223A1805C00E20BF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A652770223A1805C00E20BF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A652770123A1805C00E20BF4 /* Pursuit-Core-iOS-Images-Lab.app */,
+				A652771723A1806000E20BF4 /* Pursuit-Core-iOS-Images-LabTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A652770323A1805C00E20BF4 /* Pursuit-Core-iOS-Images-Lab */ = {
+			isa = PBXGroup;
+			children = (
+				A652774023A2D95400E20BF4 /* Yo Pokemon */,
+				A652770423A1805C00E20BF4 /* AppDelegate.swift */,
+				A652770623A1805C00E20BF4 /* SceneDelegate.swift */,
+				A652770823A1805C00E20BF4 /* ViewController.swift */,
+				A652772C23A1927900E20BF4 /* ComicAPIClient.swift */,
+				A652772E23A192BA00E20BF4 /* ComicData.swift */,
+				A652772623A1835100E20BF4 /* NetworkHelper.swift */,
+				A652772A23A191F300E20BF4 /* ImageClient.swift */,
+				A652772823A183AA00E20BF4 /* AppError.swift */,
+				A652770A23A1805C00E20BF4 /* Main.storyboard */,
+				A652770D23A1806000E20BF4 /* Assets.xcassets */,
+				A652770F23A1806000E20BF4 /* LaunchScreen.storyboard */,
+				A652771223A1806000E20BF4 /* Info.plist */,
+			);
+			path = "Pursuit-Core-iOS-Images-Lab";
+			sourceTree = "<group>";
+		};
+		A652771A23A1806000E20BF4 /* Pursuit-Core-iOS-Images-LabTests */ = {
+			isa = PBXGroup;
+			children = (
+				A652771B23A1806000E20BF4 /* Pursuit_Core_iOS_Images_LabTests.swift */,
+				A652771D23A1806000E20BF4 /* Info.plist */,
+			);
+			path = "Pursuit-Core-iOS-Images-LabTests";
+			sourceTree = "<group>";
+		};
+		A652774023A2D95400E20BF4 /* Yo Pokemon */ = {
+			isa = PBXGroup;
+			children = (
+				A652773023A1AE2A00E20BF4 /* PokemonData.swift */,
+				A652773C23A2D08A00E20BF4 /* PokemonViewController.swift */,
+				A652774123A2D9BF00E20BF4 /* DetailPokemonController.swift */,
+				A652773A23A2CCE100E20BF4 /* PokemonAPIClient.swift */,
+				A652773E23A2D40D00E20BF4 /* PokemonCell.swift */,
+			);
+			path = "Yo Pokemon";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A652770023A1805C00E20BF4 /* Pursuit-Core-iOS-Images-Lab */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A652772023A1806000E20BF4 /* Build configuration list for PBXNativeTarget "Pursuit-Core-iOS-Images-Lab" */;
+			buildPhases = (
+				A65276FD23A1805C00E20BF4 /* Sources */,
+				A65276FE23A1805C00E20BF4 /* Frameworks */,
+				A65276FF23A1805C00E20BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pursuit-Core-iOS-Images-Lab";
+			productName = "Pursuit-Core-iOS-Images-Lab";
+			productReference = A652770123A1805C00E20BF4 /* Pursuit-Core-iOS-Images-Lab.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A652771623A1806000E20BF4 /* Pursuit-Core-iOS-Images-LabTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A652772323A1806000E20BF4 /* Build configuration list for PBXNativeTarget "Pursuit-Core-iOS-Images-LabTests" */;
+			buildPhases = (
+				A652771323A1806000E20BF4 /* Sources */,
+				A652771423A1806000E20BF4 /* Frameworks */,
+				A652771523A1806000E20BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A652771923A1806000E20BF4 /* PBXTargetDependency */,
+			);
+			name = "Pursuit-Core-iOS-Images-LabTests";
+			productName = "Pursuit-Core-iOS-Images-LabTests";
+			productReference = A652771723A1806000E20BF4 /* Pursuit-Core-iOS-Images-LabTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A65276F923A1805C00E20BF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Lilia Yudina";
+				TargetAttributes = {
+					A652770023A1805C00E20BF4 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					A652771623A1806000E20BF4 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = A652770023A1805C00E20BF4;
+					};
+				};
+			};
+			buildConfigurationList = A65276FC23A1805C00E20BF4 /* Build configuration list for PBXProject "Pursuit-Core-iOS-Images-Lab" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A65276F823A1805C00E20BF4;
+			productRefGroup = A652770223A1805C00E20BF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A652770023A1805C00E20BF4 /* Pursuit-Core-iOS-Images-Lab */,
+				A652771623A1806000E20BF4 /* Pursuit-Core-iOS-Images-LabTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A65276FF23A1805C00E20BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A652771123A1806000E20BF4 /* LaunchScreen.storyboard in Resources */,
+				A652770E23A1806000E20BF4 /* Assets.xcassets in Resources */,
+				A652770C23A1805C00E20BF4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A652771523A1806000E20BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A65276FD23A1805C00E20BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A652772B23A191F300E20BF4 /* ImageClient.swift in Sources */,
+				A652772D23A1927900E20BF4 /* ComicAPIClient.swift in Sources */,
+				A652774223A2D9BF00E20BF4 /* DetailPokemonController.swift in Sources */,
+				A652773D23A2D08A00E20BF4 /* PokemonViewController.swift in Sources */,
+				A652772723A1835100E20BF4 /* NetworkHelper.swift in Sources */,
+				A652770923A1805C00E20BF4 /* ViewController.swift in Sources */,
+				A652773F23A2D40D00E20BF4 /* PokemonCell.swift in Sources */,
+				A652773123A1AE2A00E20BF4 /* PokemonData.swift in Sources */,
+				A652772923A183AA00E20BF4 /* AppError.swift in Sources */,
+				A652770523A1805C00E20BF4 /* AppDelegate.swift in Sources */,
+				A652773B23A2CCE100E20BF4 /* PokemonAPIClient.swift in Sources */,
+				A652770723A1805C00E20BF4 /* SceneDelegate.swift in Sources */,
+				A652772F23A192BA00E20BF4 /* ComicData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A652771323A1806000E20BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A652771C23A1806000E20BF4 /* Pursuit_Core_iOS_Images_LabTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A652771923A1806000E20BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A652770023A1805C00E20BF4 /* Pursuit-Core-iOS-Images-Lab */;
+			targetProxy = A652771823A1806000E20BF4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A652770A23A1805C00E20BF4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A652770B23A1805C00E20BF4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A652770F23A1806000E20BF4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A652771023A1806000E20BF4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A652771E23A1806000E20BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A652771F23A1806000E20BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A652772123A1806000E20BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77BP3AZ229;
+				INFOPLIST_FILE = "Pursuit-Core-iOS-Images-Lab/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liliayudina.Pursuit-Core-iOS-Images-Lab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A652772223A1806000E20BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77BP3AZ229;
+				INFOPLIST_FILE = "Pursuit-Core-iOS-Images-Lab/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liliayudina.Pursuit-Core-iOS-Images-Lab";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A652772423A1806000E20BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77BP3AZ229;
+				INFOPLIST_FILE = "Pursuit-Core-iOS-Images-LabTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liliayudina.Pursuit-Core-iOS-Images-LabTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pursuit-Core-iOS-Images-Lab.app/Pursuit-Core-iOS-Images-Lab";
+			};
+			name = Debug;
+		};
+		A652772523A1806000E20BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77BP3AZ229;
+				INFOPLIST_FILE = "Pursuit-Core-iOS-Images-LabTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liliayudina.Pursuit-Core-iOS-Images-LabTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pursuit-Core-iOS-Images-Lab.app/Pursuit-Core-iOS-Images-Lab";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A65276FC23A1805C00E20BF4 /* Build configuration list for PBXProject "Pursuit-Core-iOS-Images-Lab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A652771E23A1806000E20BF4 /* Debug */,
+				A652771F23A1806000E20BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A652772023A1806000E20BF4 /* Build configuration list for PBXNativeTarget "Pursuit-Core-iOS-Images-Lab" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A652772123A1806000E20BF4 /* Debug */,
+				A652772223A1806000E20BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A652772323A1806000E20BF4 /* Build configuration list for PBXNativeTarget "Pursuit-Core-iOS-Images-LabTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A652772423A1806000E20BF4 /* Debug */,
+				A652772523A1806000E20BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A65276F923A1805C00E20BF4 /* Project object */;
+}
